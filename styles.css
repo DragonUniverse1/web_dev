@@ -22,3 +22,6 @@ img{
     justify-content: center;
     flex-wrap: wrap;
 }
+    #hidden{
+        display:none;
+    }

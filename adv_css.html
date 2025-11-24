@@ -1,29 +1,64 @@
 <!--AS 7th Advanced notes-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced css</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Splash&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced css</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Splash&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+    <script>
+        showing = "none"
+        function show(){
+            alert("the content is changed *O*")
+            if(showing == "none"){
+            document.getElementById("hidden").style.display = "block"
+            display = "block"
+            showing = "block"
+            document.getElementById("button").innerHTML = "Show Less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                display = "none"
+                showing = "none"
+                document.getElementById("button").innerHTML = "Show More"
+            }
+        }
+        images = ["https://www.turkeyhill.com/images/drinks/milk/half-gallon/lowfat-chocolate-milk.jpg", "https://huskygifts.com/wp-content/uploads/2023/05/Husky-Screaming-Because-They-Want-To-Go-Potty-1024x1024.jpeg", "https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2019/07/funny-wet-cat.jpg?resize=626%2C710&ssl=1", "https://image.petmd.com/files/styles/863x625/public/pet-ferrets.jpg"]
+        index = 0
+        function change(){
+            document.getElementById("one").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index = 0
+            }
+        }
+
+        function colors(){
+            document.getElementById("left").style.color =
+            document.getElementById("user").value
+        }
+    </script>
+    </head>
 <body>
-    <h1>FERRETS *O*</h1>
+    <h1 onclick=>FERRETS *O*</h1>
+    <input type="color" id="user">
     <div id="content-wrapper">
     <div id="left">
     <p>The name ferret is derived from the Late Latin furittus, meaning 'little thief', a likely reference to the common ferret penchant for secreting away small items. In Old English (Anglo-Saxon), the animal was called mearþ. The word fyret seems to appear in Middle English in the 14th century from the Latin, with the modern spelling of ferret by the 16th century. Ferrets spend 14 to 18 hours a day asleep and are most active around the hours of dawn and dusk, meaning they are crepuscular. If they are caged, they should be taken out daily to exercise and satisfy their curiosity; they need at least an hour and a place to play. Unlike their polecat ancestors, which are solitary animals, most ferrets will live happily in social groups. They are territorial, like to burrow, and prefer to sleep in an enclosed area.</p>
-    <br><br>
-    <button>Click me</button>
+<br><br>
+<p id="hidden">Ferrets are usually nocturnal or crepuscular (most active around sunrise and sunset). Although ferrets are known to be highly active while awake, they also need a lot of rest. Generally, ferrets will sleep for at least 14 to 16 hours a day.
+Most domesticated ferrets are “de-scented” shortly after birth, meaning their anal glands are removed surgically to reduce their odor. De-scented ferrets will retain a natural, musky scent that bathing will never remove.
+It's illegal to keep ferrets as pets in some areas of the United States. Be sure to check your local laws regarding ferret ownership. </p>
+    <button id="button" onclick={show()}>Show More</button>
     </div>
     <div id="right">
 
     
-    <img src="https://image.petmd.com/files/styles/863x625/public/pet-ferrets.jpg"/>
-    <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/04/16142934/202503202408facts-about-ferrets-1.jpg"/>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymUrgTWS967OkZaw5wuDqqEaP7ebCEGHuaw&s"/>
+    <img id="one" onmouseover={change()} src="https://image.petmd.com/files/styles/863x625/public/pet-ferrets.jpg"/>
+    <img id="two" src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/04/16142934/202503202408facts-about-ferrets-1.jpg"/>
+    <img id="three" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymUrgTWS967OkZaw5wuDqqEaP7ebCEGHuaw&s"/>
     </div>
     </div>
 </body>
