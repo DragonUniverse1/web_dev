@@ -10,11 +10,11 @@ def home():
 
 @app.route("/contact")
 def contract():
-    return "<p>Dont't contact me. I don't want to talk to you. I'm tired.</p>"
+    return render_template("contact.html")
 
 @app.route("/<name>")
 def user(name):
-    return f"<h1>I said don't contact to me {name}!</h1>"
+    return f"<h1>I see you've come to torcher me {name}... Prepare for some chaos comming for you.</h1>"
 
 
 if __name__ == "__main__":
