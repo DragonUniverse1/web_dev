@@ -5,7 +5,7 @@
         <title>FINAL: Staycation Project</title>
         <meta charset="UTF-8">
         <script>
-        images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7RRzT_l2PxYSupSMtwWNl2uoY_qwvb_xSg&s", "https://www.utahsadventurefamily.com/wp-content/uploads/2015/09/IMG_3493.jpg", "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"]
+        images = ["https://lagoonhistory.com/project/wp-content/uploads/2024/07/PVRRpropsed.jpg", "https://i.ytimg.com/vi/Bd9Efni3Uv0/sddefault.jpg", "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"]
         index = 0
         function change(){
             document.getElementById("complete").src = images[index]
@@ -15,17 +15,32 @@
             }
         }
         </script>
+        <style>
+            #one{
+                background-color: rgb(229, 158, 158);
+            }
+            #two{
+                background-color: bisque;
+            }
+        </style>
         
     </head>
 
+    <div id="one">
     <body>
         <h1 style="text-align: center;">Utah's Amusement Park!</h1>
-        <p style="text-align: center;">Utah is a wonderuful place to go for vacation/holiday. But you don't know where to go or what to do. Lucky for you, I can help! If you are okay with thrill, excitment, large crowds, and rollercoasters, Lagoon is the best place for your vacation!</p>
+        <p style="text-align: center;">Utah is a wonderuful place to go for vacation/holiday. But you don't know where to go or what to do. Lucky for you, I can help! If you are okay with thrill, excitment, large crowds, and rollercoasters, Lagoon is the best place for your vacation! This place is filled with family friendly rides. It also has rides to do on a date or hang out with your friend group. Every year their theme of the park changes. Such as, during halloween, they decorate the place to be halloween theme.</p>
         <h2 style="text-align: center;">Lagoon Utah</h2>
-        <img  id="complete" onmouseover={change()} height=400px src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"/>
+        <img  id="complete" onmouseover={change()} height=350px src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"/>
+        </div>
+        <div id="two">
         <ul>
             <li><b>High Coasters:</b> Cannibal is the tallest roller coaster in Utah, ranking at 208' tall. Wicked goes straight up and straight down, at heighest of 100' </li>
             <li>Lots of the rides are family friendly</li>
-            <li><b>Ticket Prices</b></li>
+            <li><b>Ticket Prices:</b> The single day tickets are approximately $99.95 while it does depend when you decide to go, this is the average</li>
+            <li><b>Family Friendly:</b> Lots of the rides are for kids of all ages such as the fact Lagoon has an entire area dedicated to children under the age of 46 inches called <em>KiddieLand</em></li>
         </ul>
+        </div>
+        <img id="yes" height=400px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7RRzT_l2PxYSupSMtwWNl2uoY_qwvb_xSg&s"/>
+        <p>This is the tallest rollercoaster in Lagoon known as the Cannibal.</p>
     </body>
