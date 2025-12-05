@@ -14,13 +14,39 @@
                 index = 0
             }
         }
+        showing = "none"
+        function show(){
+            alert("the content is changed *O*")
+            if(showing == "none"){
+            document.getElementById("hidden").style.display = "block"
+            display = "block"
+            showing = "block"
+            document.getElementById("button").innerHTML = "Show Less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                display = "none"
+                showing = "none"
+                document.getElementById("button").innerHTML = "Show More"
+            }
+        }
         </script>
         <style>
             #one{
-                background-color: rgb(229, 158, 158);
+                background-color: rgb(221, 57, 166);
             }
             #two{
-                background-color: bisque;
+                background-color: rgb(255, 74, 74);
+            }
+            body{
+                background-color: rgb(255, 255, 236);
+                font-family: cursive;
+                color: rgb(0, 0, 0);
+            }
+            #three{
+                text-align: center;
+            }
+            #four{
+                background-color: royalblue;
             }
         </style>
         
@@ -29,7 +55,7 @@
     <div id="one">
     <body>
         <h1 style="text-align: center;">Utah's Amusement Park!</h1>
-        <p style="text-align: center;">Utah is a wonderuful place to go for vacation/holiday. But you don't know where to go or what to do. Lucky for you, I can help! If you are okay with thrill, excitment, large crowds, and rollercoasters, Lagoon is the best place for your vacation! This place is filled with family friendly rides. It also has rides to do on a date or hang out with your friend group. Every year their theme of the park changes. Such as, during halloween, they decorate the place to be halloween theme.</p>
+        <p style="text-align: center;">Utah is a wonderuful place to go for vacation/holiday. But you don't know where to go or what to do. Lucky for you, I can help! If you are okay with thrill, excitment, large crowds, and rollercoasters, Lagoon is the best place for your vacation! This place is filled with family friendly rides. It also has rides to do on a date or hang out with your friend group. Every year their theme of the park changes. Such as, during halloween, they decorate the place to be halloween theme. Though unfortunately, they do not allow things with costumes to be on such as Face make-up, costumes, or Halloween masks.</p>
         <h2 style="text-align: center;">Lagoon Utah</h2>
         <img  id="complete" onmouseover={change()} height=350px src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"/>
         </div>
@@ -41,6 +67,11 @@
             <li><b>Family Friendly:</b> Lots of the rides are for kids of all ages such as the fact Lagoon has an entire area dedicated to children under the age of 46 inches called <em>KiddieLand</em></li>
         </ul>
         </div>
-        <img id="yes" height=400px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7RRzT_l2PxYSupSMtwWNl2uoY_qwvb_xSg&s"/>
+        <div id="four">
+        <div id="three">
+        <img style="text-align: center;" id="yes" height=400px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7RRzT_l2PxYSupSMtwWNl2uoY_qwvb_xSg&s"/>
         <p>This is the tallest rollercoaster in Lagoon known as the Cannibal.</p>
+        </div >
+        <p onclick=>Lagoon also has a lot of great foods they have in store. Yes, it is quite expensive, but it is worth it when having fun. What is cool with Lagoon is when you first enter, there are gifts shops nearby as well as restaraunts or bathrooms. Some things they sell there with the gift shops are lagoon merch, stuffed animals, magnets, bags, water bottles, plus many many other things.</p>
+        </div>
     </body>
