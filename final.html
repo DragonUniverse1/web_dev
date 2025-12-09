@@ -5,15 +5,6 @@
         <title>FINAL: Staycation Project</title>
         <meta charset="UTF-8">
         <script>
-        images = ["https://lagoonhistory.com/project/wp-content/uploads/2024/07/PVRRpropsed.jpg", "https://i.ytimg.com/vi/Bd9Efni3Uv0/sddefault.jpg", "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"]
-        index = 0
-        function change(){
-            document.getElementById("complete").src = images[index]
-            index += 1
-            if(index >= images.length){
-                index = 0
-            }
-        }
         showing = "none"
         function show(){
             alert("the content is changed *O*")
@@ -27,6 +18,15 @@
                 display = "none"
                 showing = "none"
                 document.getElementById("button").innerHTML = "Show More"
+            }
+        }    
+        images = ["https://lagoonhistory.com/project/wp-content/uploads/2024/07/PVRRpropsed.jpg", "https://i.ytimg.com/vi/Bd9Efni3Uv0/sddefault.jpg", "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5c/e7/80/lagoon-a-beach.jpg?w=900&h=500&s=1"]
+        index = 0
+        function change(){
+            document.getElementById("complete").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index = 0
             }
         }
         </script>
